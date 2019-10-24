@@ -18,7 +18,7 @@ Minimal code to get started with behat php testing using mink on windows 10
 3. Run `bin\behat --init`
 
 4. Place the downloaded selenium-server-standalone-*.jar file in selenium folder. 
-    >If your selenium version is different not 2.53.0 then edit the selenium.bat file accordingly
+    >If your selenium version is not 2.53.0 then edit the selenium.bat file accordingly
     
 5. Double-click on selenium.bat. Now you are ready to start testing.
 
