@@ -1,0 +1,29 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        # - Behat\MinkExtension\Context\MinkContext
+
+  extensions:
+      Behat\MinkExtension:
+        show_cmd: code %s #command that you want to run for preview of show response
+        #base_url: https://www.wikipedia.org/
+        browser_name: chrome
+        goutte: ~
+        selenium2:
+          wd_host: http://127.0.0.1:4444/wd/hub
+          browser: chrome
+          capabilities:
+            marionette: true
+    
+firefox:
+  extensions:
+    Behat\MinkExtension:
+      base_url: https://www.wikipedia.org/
+      browser_name: firefox
+      selenium2:
+        wd_host: http://127.0.0.1:4444/wd/hub
+        browser: firefox
+        capabilities:
+          marionette: true
